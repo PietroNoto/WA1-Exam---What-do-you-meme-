@@ -1,0 +1,49 @@
+.nav-bi
+{
+    color: whitesmoke;
+}
+
+.dropdown
+{
+    color: white;
+}
+
+.btn-primary
+{
+    background-color: rgb(255, 145, 0);
+    border-color: rgb(255, 145, 0);
+}
+
+.btn-primary:hover
+{
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.form-check-input:checked
+{
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.score-badge
+{
+    background-color: orange !important;
+}
+
+.dropdown-menu
+{
+    background-color: white !important;
+    border-color: orangered !important;
+}
+
+.dropdown-item:hover
+{
+    background-color: white !important;
+}
+
+.history-pill
+{
+    background-color: orange !important;
+    border-color: orange !important;
+}

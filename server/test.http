@@ -1,0 +1,57 @@
+# Trova n immagini random
+GET http://localhost:3001/api/pics/rand/3
+###
+
+
+# Trova 5 didascalie random tra quelle che NON si abbinano all'immagine pic_id
+GET http://localhost:3001/api/captions/exclude/10
+###
+
+
+# Trova 2 tra le didascalie associate all'immagine picId prese in modo random
+GET http://localhost:3001/api/pics/9/rand/captions
+###
+
+
+# Trova tutte le didascalie associate ad un'immagine
+GET http://localhost:3001/api/pics/11/captions
+###
+
+
+# Trova tutte le partite giocate dall'utente u_id
+GET http://localhost:3001/api/users/1/games
+###
+
+
+# Salva una partita giocata da un utente nel DB
+POST http://localhost:3001/api/users/1/games
+content-type: application/json
+
+{
+    "u_id": 1,
+    "score": 5,
+    "timestamp": "2025-05-09T15:38:28+02:00",
+    "pic_ids": "5,6,7"
+}
+###
+
+
+# Login
+POST http://localhost:3001/api/sessions/
+content-type: application/json
+
+{
+    "username": "pietro.noto@polito.it",
+    "password": "pietro"
+}
+###
+
+
+# Recupera la sessione di login corrente
+GET http://localhost:3001/api/sessions/current
+###
+
+
+# Effettua il logout cancellando la sessione di login corrente
+DELETE http://localhost:3001/api/sessions/current
+###
